@@ -1,13 +1,23 @@
 package domain
 
 import (
-	"fmt"
+    "fmt"
 )
 
 type Robot struct {
-	Name string
+    Name    string
+    X       int
+    Y       int
+    D       int
 }
 
+const ymax = 10
+const xmax = 10
+
 func (r Robot) Hello() string {
-	return fmt.Sprintf("Hello, %s", r.Name)
+    return fmt.Sprintf("Hello, %s", r.Name)
+}
+
+func (r Robot) Move(s int) {
+
 }
